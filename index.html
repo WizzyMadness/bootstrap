@@ -179,15 +179,15 @@
                     <form>
                         <div class="form-row">
                           <div class="col-12 col-md-6">
-                            <input type="text" class="form-control" placeholder="Nombre">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
                           </div>
                           <div class="col-12 col-md-6">
-                            <input type="text" class="form-control" placeholder="Apellido">
+                            <input type="text" class="form-control" placeholder="Apellido" required>
                           </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col">
-                              <textarea name="text" class="form-control form-control-lg" placeholder="Sobre qué quieres hablar?"></textarea>
+                              <textarea name="text" class="form-control form-control-lg" placeholder="Sobre qué quieres hablar?" required></textarea>
                               <small class="form-text text-muted">
                                   Recuerda incluir un titulo a tu charla.
                               </small>
@@ -195,7 +195,7 @@
                         </div>
                         <div class="form-row">
                             <div class="col">
-                              <button type="button" class="btn btn-platzi btn-block">Enviar</button>
+                              <button type="submit" class="btn btn-platzi btn-block">Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -252,20 +252,20 @@
                             <div class="input-group-prepend">
                               <span class="input-group-text" id="inputGroupPrepend">@</span>
                             </div>
-                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                            <input type="email" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
                             <div class="invalid-feedback">
                               Please choose a username.
                             </div>
                           </div>    
                       </div>
                   </div>
-              </form>
               <div class="alert alert-warning" role="alert">Se le enviara un mensaje a su correo de confirmacion</div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Comprar</button>
+              <button type="submit" class="btn btn-primary">Comprar</button>
             </div>
+        </form>
           </div>
         </div>
     </div>
